@@ -527,12 +527,15 @@ centre these elements using flexbox*/
     width:50%;
 }
 
-/*-----------------------------*/
+/*--------------CHECKOUT PAGE---------------*/
+
+/*Position the main div that holds all the checkout divs*/
 .checkout-cart {
     padding-top: 124px;
     margin-left: 383px;
 }
 
+/*Add a bottom border and adjust the size of the individual product divs*/
 .checkout-product-div{
     width:640px;
     height:180px;
@@ -542,6 +545,7 @@ centre these elements using flexbox*/
     padding: 16px;
 }
 
+/*Adjust the image position and size*/
 .checkout-image-super{
     float:left;
     width:160px;
@@ -549,28 +553,30 @@ centre these elements using flexbox*/
     margin-right: 30px;
 }
 
+/*position the product name*/
 .checkout-product-div #product-name{
     display:block;
     margin-right:30px;
     font-size: 24px;
 }
 
+/*position the product cost*/
 .checkout-product-div #product-cost{
     float:right;
     font-size: 24px;
 }
 
+/*style the delete button*/
 .checkout-product-div #delete-item{
     float:right;
     border-radius: 2px;
-    border: solid 2px #000000;
     text-align: center;
     color: #ffffff;
-
 }
 
+/*Style the product details*/
 .checkout-product-div #product-amount{
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 .checkout-product-div #additionalFlavours{
     font-size:12px;
@@ -585,17 +591,18 @@ margin-bottom: 16px;
 }
 
 .checkout-product-div #product-flava1{
-       font-size: 14px;
+    font-size: 14px;
 }
 
 #flavour1{
     margin-top: 16px;
 }
 .checkout-product-div #product-flava2{
-       font-size: 14px;
-       margin-bottom: 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
 }
 
+/*Style the cart page title*/
 .checkout-cart h3{
     font-size: 24px;
     justify-content: center;

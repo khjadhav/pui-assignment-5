@@ -17,7 +17,7 @@ var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
 // Change the number of items in the shopping cart
 $("#numForCart").text(cartArray.length);
 
-// loop through the carArray
+// loop through the cartArray
 for (var i=0; i<cartArray.length; i++){
     var desiredBun = cartArray[i];
     //Dynamically create a div (checkout-product-div) in which all the new divs will go into
@@ -56,13 +56,17 @@ for (var i=0; i<cartArray.length; i++){
 
     // Create a function to delete items from the cart
     $(".del-button").click(function(){
-        console.log("clicked!");
+        //remove the product item
         $(this).parent().remove();
+        // identify the position of the object in the Array
         var position=$(this).attr('id');
+        //remove the item from the Array
         cartArray.splice(position,1);
-        console.log(cartArray);
+        //Reupdate the length of the array in localStorage
         localStorage.setItem("cartArray", JSON.stringify(cartArray));
+        //display the update information as the cart number
         $("#numForCart").text(cartArray.length);
+        //refresh the page
         location.reload();
     });
     $(".checkout-cart").append(container);
