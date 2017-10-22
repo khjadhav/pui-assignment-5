@@ -1,0 +1,588 @@
+/*Remove all default styling for all the elements used in HTML*/
+html, body, h1, h2, h3, h4, p, div, ul,li,a {
+    padding:0;
+    border:0;
+    margin:0;
+    list-style-type: none;
+    font:inherit;
+    font-size: 100%;
+    font-family: Avenir, Helvetica, sans-serif;
+}
+
+/*-------------------NAVBAR----------------------*/
+
+/*Create a persistent navbar*/
+.header {
+    background-color: #ffffff;
+    /* Set the navbar to fixed position
+    top: 0;*/
+    position: fixed;
+    width: 100%;
+    display: block;
+    height: 64px;
+    /*add a drop shadow*/
+    box-shadow: 2px 2px 2px #888888;
+}
+
+/*float the logo on the left and remove any link styling*/
+#logo a{
+    float:left;
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 700;
+    padding:16px 16px 16px 48px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*display all the links in one line and arrange them to the right of the screen*/
+.navbar-links li {
+    display: inline-flex;
+    float:right;
+    text-align: center;
+    padding: 22px 24px 20px 0;
+    text-align: left;
+}
+
+/* style all the links to black color and remove the default underline*/
+.navbar-links li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/*style the navbar button and make it a solic blue rounded button with white text*/
+.navbar-links button{
+    width: 187px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #0dadf1;
+    border-style: none;
+/*    the -5px compensates for the padding added to all the links, this makes sure
+    the button is in line with other links*/
+    margin: -5px 24px 15px 24px;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#numForCart{
+    margin-left: -18px;
+}
+
+/*-------------------BANNER----------------------*/
+/*Centre align all the elements in the banner*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style the banner button to a blue bordered rounded button with blue text inside*/
+#banner-image-text button{
+    width: 217px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 3px #0dadf1;
+    margin-top:20px;
+    margin-bottom: 37px;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #0dadf1;
+}
+
+/*add padding and styling for both banner text and image combined*/
+#banner-image-text {
+    padding:70px 89px 37px 90px;
+    width: 237px;
+    font-family: Avenir;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+}
+
+/*add padding for the banner text*/
+.banner-image-text h2{
+    margin-top:37px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*add a background image for the banner*/
+.banner{
+    padding-top:107px;
+    padding-bottom:107px;
+    width:100%;
+    height:100%;
+    background-image: url("/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/banner-image-1.jpg");
+    object-fit:contain;
+    background-size: cover;
+}
+
+/*create a white rectangle on top of which the text and button will sit,
+centre these elements using flexbox*/
+.banner-text-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 417px;
+    height: 200px;
+    background-color: white;
+}
+
+/*-------------------OUR BESTSELLERS----------------------*/
+
+/*align all the links (images) one line and add padding*/
+.section1 li{
+    display:inline;
+    padding:0 8px 0 8px;
+}
+
+
+/*center align the images and the button*/
+.section-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style the banner button to a blue bordered rounded button with blue text inside*/
+#section1-button{
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 400px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #0dadf1;
+    border-style: none;
+}
+
+
+/*Change font size, weight and style of the section titles*/
+.section-title{
+    font-family: Avenir;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    padding-left: 47px;
+    padding-top: 80px;
+}
+
+/*Centre align the images to the container*/
+.section1-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*-------------------INSIDE OUR SHOP----------------------*/
+
+/*align all the links (images) one line and add padding*/
+.section2 li{
+    display:inline;
+    padding:0 8px 0 8px;
+}
+
+/*center align the images and the button*/
+.section2-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*-------------------FOOTER----------------------*/
+/*make all the footer columns align in one line next to each other*/
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*add a thick black border to the top of the div and adjust padding*/
+.footer-column1{
+    display: inline-flex;
+    margin:80px 30px 60px 47px;
+    width:210;
+    border-top: 4px solid black;
+    padding: 30px;
+}
+
+/*add a thick black border to the top of the div and adjust padding and margin*/
+.footer-column2{
+    display: inline-flex;
+    margin:80px 30px 60px 0;
+    width:210;
+    border-top: 4px solid black;
+    padding: 30px;
+}
+
+/*add a thick black border to the top of the div and adjust padding*/
+.footer-column3{
+    display:inline-flex;
+    margin:80px 30px 60px 0;
+    width:700px;
+    border-top: 4px solid black;
+    padding: 26px;
+}
+
+.footer-column3 li{
+    display:inline-flex;
+}
+
+/*make the social media font awesome to appear on another line*/
+.social-media{
+    padding:10px;
+/*    position:absolute;*/
+/*    margin-top:30px;*/
+    display: flex;
+}
+
+/*change the color of the placeholder text to white*/
+#email-address::-webkit-input-placeholder{
+    color:#000000;
+}
+
+/*style the email input box of to get a solid black border*/
+#email-address{
+    border:solid 2px #000000;
+    width:300px;
+    height:26px;
+}
+
+/*style the button as a black solid rounded button*/
+#footer-button{
+    width: 172px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #000000;
+    border-style: none;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right:0px;
+
+}
+
+/*-------------------DISCOUNT SECTION----------------------*/
+
+/*center align all the content and create a blue rectangle which is full width of the screen*/
+.discount-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 165px;
+    background-color: #0dadf1;
+    margin-top: 60px;
+}
+
+/*make the text white in color and set the size*/
+#discount-text{
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    padding-right: 40px;
+}
+
+/*make the input and button appear in one single line*/
+.discount-buttons li{
+    display:inline;
+}
+
+/*style the email input box to be white border rounded button with blue background*/
+#email-address-discount{
+    border:solid 2px #FFFFFF;
+    width:300px;
+    height:22px;
+    background: #0dadf1;
+}
+
+/*style the button to be white solid rounded rectangle button with blue text on it*/
+#discount-button{
+    width: 172px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    border-style: none;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #0dadf1;
+    margin-right:0px;
+}
+
+/*make the placeholder text be white in color*/
+#email-address-discount::-webkit-input-placeholder{
+    color:#FFFFFF;
+}
+
+/*---------------------------------PRODUCT PAGE-------------------------------------------
+/*-------------------Page Title----------------------*/
+.h3{
+    font-size:16px;
+}
+.product-image-text{
+    padding:12px 0 12px 16px;
+}
+
+/*-------------------Product image grid----------------------*/
+.product-image-grid{
+   /*centre align the grid to the screen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*make a 4 column grid of dimensions 208px x 282px, column&row gap 40px */
+    display:grid;
+    grid-template-columns: repeat(4, 208px);
+    grid-column-gap: 40px;
+    grid-auto-rows: 282px;
+    grid-row-gap: 40px;
+    margin-top:60px;
+}
+
+/*create a product image card with a drop shadow*/
+.product-image{
+    width:208px;
+    height:282px;
+    background-color:#F5F5F5;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 4px;
+}
+
+/*-------------------Product details grid----------------------*/
+/*centre align the detailed product image and text to the centre of the page*/
+.product-details-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*add a margin to the detailed product image*/
+.product-details-grid img{
+    margin-top: 124px;
+    margin-left:280px;
+}
+
+/*space the button and text 40px away from the detailed product picture */
+.text-and-button{
+    align-items: baseline;
+    margin-left:40px;
+}
+
+/*make the description of the detailed product, 50% of the screen size*/
+.product-text{
+    width:50%;
+}
+
+/*style the h1 and h3*/
+.product-text h1{
+    font-size:32px;
+    font-weight: 500;
+    padding-bottom:10px;
+}
+
+.product-text h3{
+    width:70%;
+    font-size:24px;
+    font-weight: 300;
+    padding-top:24px;
+    padding-bottom:24px;
+}
+
+/*add a margin for the product title*/
+#product-page-title{
+    margin-top:30px;
+    margin-left: 57px;
+}
+
+
+/*style the add to cart button with as a solid blue rounded button with white text on top*/
+.add-to-cart-button{
+    margin-top:36px;
+    width: 187px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #0dadf1;
+    border-style: none;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+/*------the Dropdown menu--------*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #FFFFFF;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: #000000;
+    cursor: pointer;
+    margin-bottom:16px;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #FFFFFF;
+    border-color: #86DBFF;
+}
+
+
+#number{
+    width:20px;
+}
+
+#number-input{
+    margin-bottom: 30px;
+}
+/*--------------------------------ABOUT US PAGE-------------------------------------------*/
+
+/*position the "about us" image on the page*/
+.about-us img{
+    margin:120px 403px 32px 403px;
+    width: 560px;
+    height: 360px;
+    object-fit: contain;
+}
+
+/*position the "about us" text on the page*/
+.about-us p{
+    margin-left: 341px;
+    width:50%;
+}
+
+/*-----------------------------*/
+.checkout-cart {
+    padding-top: 124px;
+    margin-left: 383px;
+}
+
+.checkout-product-div{
+    width:640px;
+    height:180px;
+    border-bottom: 1px solid black;
+    margin-bottom: 60px;
+    max-width: 600px;
+    padding: 16px;
+}
+
+.checkout-image-super{
+    float:left;
+    width:160px;
+    height:180px;
+    margin-right: 30px;
+}
+
+.checkout-product-div #product-name{
+    display:block;
+    margin-right:30px;
+    font-size: 24px;
+}
+
+.checkout-product-div #product-cost{
+    float:right;
+    font-size: 24px;
+}
+
+.checkout-product-div #delete-item{
+    float:right;
+    border-radius: 2px;
+    border: solid 2px #000000;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.checkout-product-div #product-amount{
+margin-bottom: 16px;
+
+/*font-weight:800;
+*/}
+.checkout-product-div #additionalFlavours{
+    font-size:12px;
+    font: Avenir-Bold;
+    font-weight:500;
+}
+.checkout-product-div #product-quant{
+    font-size: 14px;
+}
+.checkout-product-div #product-amount{
+    font-size: 14px;
+}
+
+.checkout-product-div #product-flava1{
+       font-size: 14px;
+/*    float: left;*/
+}
+
+#flavour1{
+    margin-top: 16px;
+}
+.checkout-product-div #product-flava2{
+       font-size: 14px;
+       margin-bottom: 16px;
+
+/*    float: left;
+    margin-left: 6px;
+    margin-right: 100px;
+*/}

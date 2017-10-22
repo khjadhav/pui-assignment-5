@@ -1,1 +1,165 @@
-<!-- fill me in!-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The BunBun Shop.</title>
+        <meta charset="utf-8"/>
+        <!--         link to the CSS style sheet  -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--         link to font-awesome  -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+<!-- .................................NAVBAR................................. -->
+        <div class="header">
+<!--             link the logo and other pages using href tags -->
+                <ul>
+                    <li id="logo"><a href=index.html><h1>BunBunShop.</h1></a></li>
+                </ul>
+                <div class="navbar-links">
+                    <ul>
+                        <li><button>FIND US HERE</button></li>
+                        <li>BLOG</li>
+                        <li><a href=about.html>ABOUT</a></li>
+                        <li><a href=product.html>SHOP</a></li>
+                        <li><a id=numForCart>0</a></li>
+<!--                         add cart through font awesome -->
+                        <li><a href=checkout.html><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+<!-- .................................BANNER................................. -->
+            <div class="banner">
+                <div class="banner-text-background">
+                    <div id="banner-image-text">
+                        <h2 >We ship fresh rolls to anywhere in the USA.</h2>
+                        <button>SHOP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- .................................SECTION1.................................-->
+        <div class="section1">
+            <div class="section-title" id="section-title1">
+                <h1>Our Bestsellers</h1>
+            </div>
+<!-- adding a section divider using hr tag that spans 95% of the screen space
+ -->            <hr style="width:95%;">
+
+            <div class="section1-images">
+                <ul>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/card1.jpg" alt="Strawberry Rhubarb" widht=208 height=282>
+                    </li>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/card2.jpg" alt="Walnut" widht=208 height=282>
+                    </li>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/card3.jpg" alt="Maple Apple Pecan" widht=208 height=282>
+                    </li>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/card4.jpg" alt="Maple Apple Pecan" widht=208 height=282>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-buttons">
+                <button id="section1-button">SEE ALL THE FLAVOURS</button>
+            </div>
+        </div>
+
+<!-- ........................DISCOUNT SECTION.................................-->
+        <div class="discount-section">
+            <div class="discount-text">
+                <p id="discount-text">Subscribe and get 10% discount on the first order!</p>
+            </div>
+            <div class="discount-buttons">
+                <ul>
+                    <li id="email-input">
+<!--                         add placeholder text -->
+                        <input id="email-address-discount" type="email" placeholder="Enter email address">
+                    </li>
+                    <li>
+                        <button id="discount-button">SUBSCRIBE</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<!-- ........................SECTION 2.................................-->
+        <div class="section2">
+            <div class="section-title" id="section-title2">
+                <h1>Inside Our Shop</h1>
+            </div>
+<!-- adding a section divider using hr tag that spans 95% of the screen space
+ -->
+            <hr style="width:95%">
+
+        <div class="section2-images">
+                <ul>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/shop1.jpg" alt="Strawberry Rhubarb" widht=287 height=294>
+                    </li>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/shop2.jpg" alt="Walnut" widht=287 height=294>
+                    </li>
+                    <li>
+                        <img src="/Users/ketkijadhav/Documents/CMU 2017/Fall/PUI/Bakery Website/HTML:CSS/assets/shop3.jpg" alt="Maple Apple Pecan" widht=287 height=294>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-buttons">
+                <button id="section1-button">FOLLOW US ON INSTAGRAM</button>
+            </div>
+        </div>
+
+<!-- ........................FOOTER.................................-->
+        <div class="footer">
+<!--             create 3 columns for the footer which can be adjusted next to each other  -->
+            <div class="footer-column1">
+                <ul>
+                    <li>Shop</li>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Find us Here</li>
+                </ul>
+            </div>
+
+            <div class="footer-column2">
+                <ul>
+                    <li>4716, Ellsworth Avenue</li>
+                    <li>Pittsburgh,PA</li>
+                    <li>15213</li>
+                    <li>+412 617 6345</li>
+                </ul>
+            </div>
+
+            <div class="footer-column3">
+                <div class="footer-email">
+                    <ul>
+                        <li id="email-input">
+<!--                             add placeholder text
+ -->                            <input id="email-address" type="email" placeholder="Enter email address">
+                        </li>
+                        <li>
+                            <button id="footer-button">SUBSCRIBE</button>
+                        </li>
+                    </ul>
+                </div>
+<!--                     create a class for font awesome -->
+                <div class="social-media">
+                    <ul>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
