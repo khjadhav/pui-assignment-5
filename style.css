@@ -432,6 +432,22 @@ centre these elements using flexbox*/
     color: #FFFFFF;
 }
 
+.add-to-wishlist-button{
+    margin-top:6px;
+    width: 187px;
+    height: 24px;
+    border-radius: 2px;
+    border:2px solid black;
+    background-color: #ffffff;
+/*    border-style: none;*/
+    font-family: Avenir;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #000000;
+}
+
 
 
 /*------the Dropdown menu--------*/
@@ -555,9 +571,7 @@ centre these elements using flexbox*/
 
 .checkout-product-div #product-amount{
 margin-bottom: 16px;
-
-/*font-weight:800;
-*/}
+}
 .checkout-product-div #additionalFlavours{
     font-size:12px;
     font: Avenir-Bold;
@@ -572,7 +586,6 @@ margin-bottom: 16px;
 
 .checkout-product-div #product-flava1{
        font-size: 14px;
-/*    float: left;*/
 }
 
 #flavour1{
@@ -581,8 +594,13 @@ margin-bottom: 16px;
 .checkout-product-div #product-flava2{
        font-size: 14px;
        margin-bottom: 16px;
+}
 
-/*    float: left;
-    margin-left: 6px;
-    margin-right: 100px;
-*/}
+.checkout-cart h3{
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    border-bottom: 1px solid black;
+    margin-bottom: 60px;
+}

@@ -10,7 +10,7 @@ function Bun(name, cost, quant, amount, flava1, flava2, img){
 }
 
 $(document).ready(function() {
-
+// -----------------------------------------Cart Array------------------------------------------
 var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
     $("#numForCart").text(cartArray.length);
 
@@ -42,12 +42,15 @@ for (var i=0; i<cartArray.length; i++){
     }
 
 
-    var deleteButton = $("<button id=delete-item"+i+">Remove Item</button>");
+    var deleteButton = $("<button id=" +i+ ">Remove Item</button>");
     deleteButton.appendTo(container);
+
     deleteButton.click(function(){
         console.log("clicked!");
         $(this).parent().remove();
-
+        var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
+        cartArray.splice(i,1)
+        $("#numForCart").text(cartArray.length);
     });
 
     $(".checkout-cart").append(container);
@@ -109,6 +112,21 @@ $(".add-to-cart-button").click(function(){
     console.log(numForCart);
     numForCart+= parseInt($("#number-input").val());
     $("#numForCart").text(numForCart);
+})
+
+$(".add-to-wishlist-button").click(function(){
+    var packs= $("#packs").val();
+    var flav1= $("#flavour1").val();
+    var flav2= $("#flavour2").val();
+    var amountOfProduct=$("#number-input").val();
+    var BunBun=new Bun("Original (Gluten-Free)", price, packs, amountOfProduct, flav1, flav2, location);
+    console.log(location);
+
+    // || means put the things in an Array
+    var existingCartItems=JSON.parse(localStorage.getItem("wishArray")) || [];
+    existingCartItems.push(BunBun);
+    localStorage.setItem("wishArray", JSON.stringify(existingCartItems));
+    console.log(JSON.parse(localStorage.getItem("wishArray")));
 })
 
 })
