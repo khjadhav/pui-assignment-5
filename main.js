@@ -17,7 +17,7 @@ var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
 // Change the number of items in the shopping cart
 $("#numForCart").text(cartArray.length);
 
-// loop through the cartArray
+// loop through the carArray
 for (var i=0; i<cartArray.length; i++){
     var desiredBun = cartArray[i];
     //Dynamically create a div (checkout-product-div) in which all the new divs will go into
