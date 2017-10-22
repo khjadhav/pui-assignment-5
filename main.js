@@ -49,8 +49,12 @@ for (var i=0; i<cartArray.length; i++){
         console.log("clicked!");
         $(this).parent().remove();
         var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
-        cartArray.splice(i,1)
+
+        // cartArray.splice(cartArray.indexOf($(this).parent(),1);
+        // cartArray.splice( $.inArray(i, cartArray), 1 );
+        // cartArray.splice(i,1)
         $("#numForCart").text(cartArray.length);
+        location.reload();
     });
 
     $(".checkout-cart").append(container);
